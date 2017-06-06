@@ -54,7 +54,7 @@ function addEvenMoreExcitement (theWordArray) {
       for (i=0; i < sentence.length; i++) {
       if ((i % 3) === 0 && i !== 0) {
         var numberOfExclamationPoints = i / 3;
-        moreExcitedStacker += sentence[i] + numberOfExclamationPoints + "! ";
+        moreExcitedStacker += sentence[i] + "!".repeat(numberOfExclamationPoints) + " ";
       } else {
         moreExcitedStacker += sentence[i] + " ";
       }
